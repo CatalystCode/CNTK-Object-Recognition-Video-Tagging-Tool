@@ -424,6 +424,9 @@ export interface IAppStrings {
                     description: string,
                 },
             },
+            yolo: {
+                displayName: string,
+            },
             cntk: {
                 displayName: string,
             },

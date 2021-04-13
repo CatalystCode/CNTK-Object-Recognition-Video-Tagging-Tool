@@ -1,5 +1,6 @@
 import { ExportProviderFactory } from "./providers/export/exportProviderFactory";
 import { PascalVOCExportProvider } from "./providers/export/pascalVOC";
+import { YOLOExportProvider } from "./providers/export/yolo";
 import { TFRecordsExportProvider } from "./providers/export/tensorFlowRecords";
 import { VottJsonExportProvider } from "./providers/export/vottJson";
 import { CsvExportProvider } from "./providers/export/csv";
@@ -59,6 +60,11 @@ export default function registerProviders() {
         name: "pascalVOC",
         displayName: strings.export.providers.pascalVoc.displayName,
         factory: (project, options) => new PascalVOCExportProvider(project, options),
+    });
+    ExportProviderFactory.register({
+        name: "yolo",
+        displayName: strings.export.providers.yolo.displayName,
+        factory: (project, options) => new YOLOExportProvider(project, options),
     });
     ExportProviderFactory.register({
         name: "tensorFlowRecords",

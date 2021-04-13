@@ -439,6 +439,9 @@ export const chinesetw: IAppStrings = {
                     description: "是否在已匯出的數據中包括未指定的標記", // Whether or not to include unassigned tags in exported data
                 },
             },
+            yolo: {
+                displayName: "YOLO", // YOLO
+            },
             cntk: {
                 displayName: "Microsoft Cognitive Toolkit（CNTK)", // Microsoft Cognitive Toolkit (CNTK)
             },

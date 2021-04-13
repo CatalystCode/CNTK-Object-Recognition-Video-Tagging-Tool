@@ -436,6 +436,9 @@ export const korean: IAppStrings = {
                     // Whether or not to include unassigned tags in exported data"
                 },
             },
+            yolo: {
+                displayName: "YOLO",  // YOLO
+            },
             cntk: {
                 displayName: "Microsoft Cognitive Toolkit（CNTK）", // Microsoft Cognitive Toolkit (CNTK)"
             },

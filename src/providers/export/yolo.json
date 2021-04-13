@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "title": "${strings.export.providers.yolo.displayName}",
+    "properties": {
+        "assetState": {
+            "type": "string",
+            "title": "${strings.export.providers.common.properties.assetState.title}",
+            "description": "${strings.export.providers.common.properties.assetState.description}",
+            "enum": [
+                "all",
+                "visited",
+                "tagged"
+            ],
+            "default": "visited",
+            "enumNames": [
+                "${strings.export.providers.common.properties.assetState.options.all}",
+                "${strings.export.providers.common.properties.assetState.options.visited}",
+                "${strings.export.providers.common.properties.assetState.options.tagged}"
+            ]
+        }
+    }
+}

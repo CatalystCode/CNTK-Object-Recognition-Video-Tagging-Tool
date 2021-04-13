@@ -423,6 +423,9 @@ export const english: IAppStrings = {
                     description: "Whether or not to include unassigned tags in exported data",
                 },
             },
+            yolo: {
+                displayName: "YOLO",
+            },
             cntk: {
                 displayName: "Microsoft Cognitive Toolkit (CNTK)",
             },

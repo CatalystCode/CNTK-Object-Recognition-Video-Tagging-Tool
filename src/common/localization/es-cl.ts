@@ -426,6 +426,9 @@ export const spanish: IAppStrings = {
                     description: "Si se incluyen o no etiquetas no asignadas en los datos exportados",
                 },
             },
+            yolo: {
+                displayName: "YOLO",
+            },
             cntk: {
                 displayName: "Microsoft Cognitive Toolkit (CNTK)",
             },

@@ -211,6 +211,13 @@ Click on the `Export` (arrow) icon in the left hand navigation. Select the appro
 
 ![alt text](docs/images/export-labels.jpg "Export Labels")
 
+### Converting Labels
+
+To convert the VoTT JSON schema to and from other formats (such as COCO JSON or YOLO TXT), you can use the following (unofficial) third-party tools:
+
+* [Pascal VOC to VoTT JSON](https://github.com/Chappie74/convert_pascalvoc_to_vott)
+* [From VoTT JSON to COCO JSON, YOLO TXT, and other formats](https://roboflow.com/formats/vott-json)
+
 ### Keyboard Shortcuts
 
 VoTT allows a number of keyboard shortcuts to make it easier to keep one hand on the mouse while tagging. It allows most common shortcuts:

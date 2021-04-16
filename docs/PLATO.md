@@ -1,6 +1,6 @@
 # Overview
 
-We're using [es6-plato](https://github.com/the-simian/es6-plato) to analyze code complexity. VoTT first has to be transpiled to ES6, as es6-plato won't work direcly on TypeScript.
+We're using [es6-plato](https://github.com/the-simian/es6-plato) to analyze code complexity. VoTT first has to be transpiled to ES6, as es6-plato won't work directly on TypeScript.
 
 We're also using the [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) eslint plugin for React-specific linting rules.
 

@@ -34,3 +34,19 @@ export class CustomVideoPlayerButton extends React.Component<ICustomVideoPlayerB
         );
     }
 }
+
+export class CustomVideoPlayerKeyBinding extends React.Component<ICustomVideoPlayerButtonProps> {
+    public render() {
+        return (
+            <Fragment>
+                {this.props.accelerators &&
+                    <KeyboardBinding keyEventType={KeyEventType.KeyDown}
+                        displayName={this.props.tooltip}
+                        accelerators={this.props.accelerators}
+                        handler={this.props.onClick}
+                        icon={this.props.icon}/>
+                }
+            </Fragment>
+        );
+    }
+}

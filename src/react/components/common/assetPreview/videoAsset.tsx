@@ -9,6 +9,7 @@ import { IAssetProps } from "./assetPreview";
 import { IAsset, AssetType, AssetState } from "../../../../models/applicationState";
 import { AssetService } from "../../../../services/assetService";
 import { CustomVideoPlayerButton } from "../../common/videoPlayer/customVideoPlayerButton";
+import { CustomVideoPlayerKeyBinding } from "../../common/videoPlayer/customVideoPlayerButton";
 import { strings } from "../../../../common/strings";
 
 /**
@@ -119,6 +120,20 @@ export class VideoAsset extends React.Component<IVideoAssetProps> {
                         >
                             <i className="fas fa-step-forward"></i>
                         </CustomVideoPlayerButton>
+                        <CustomVideoPlayerKeyBinding order={8.3}
+                            accelerators={["H", "h"]}
+                            tooltip={strings.editorPage.videoPlayer.previousVisitedFrame.tooltip}
+                            onClick={this.movePreviousVisitedFrame}
+                            icon={"fas fa-step-backward"}
+                        >
+                        </CustomVideoPlayerKeyBinding>
+                        <CustomVideoPlayerKeyBinding order={8.4}
+                            accelerators={["L", "l"]}
+                            tooltip={strings.editorPage.videoPlayer.nextVisitedFrame.tooltip}
+                            onClick={this.moveNextVisitedFrame}
+                            icon={"fas fa-step-forward"}
+                        >
+                        </CustomVideoPlayerKeyBinding>
                     </ControlBar>
                 }
             </Player >
@@ -171,6 +186,35 @@ export class VideoAsset extends React.Component<IVideoAssetProps> {
         const currentTime = this.getVideoPlayerState().currentTime;
         const nextFrame = this.props.childAssets
             .find((asset) => asset.state === AssetState.Tagged && asset.timestamp > currentTime);
+
+        if (nextFrame) {
+            this.seekToTime(nextFrame.timestamp);
+        }
+    }
+
+    /**
+     * Bound to the "Previous Visited Frame" button
+     * Seeks the user to the previous visited video frame
+     */
+    private movePreviousVisitedFrame = () => {
+        const currentTime = this.getVideoPlayerState().currentTime;
+        const previousFrame = _
+            .reverse(this.props.childAssets)
+            .find((asset) => asset.state === AssetState.Visited && asset.timestamp < currentTime);
+
+        if (previousFrame) {
+            this.seekToTime(previousFrame.timestamp);
+        }
+    }
+
+    /**
+     * Bound to the "Next Visited Frame" button
+     * Seeks the user to the next visited video frame
+     */
+    private moveNextVisitedFrame = () => {
+        const currentTime = this.getVideoPlayerState().currentTime;
+        const nextFrame = this.props.childAssets
+            .find((asset) => asset.state === AssetState.Visited && asset.timestamp > currentTime);
 
         if (nextFrame) {
             this.seekToTime(nextFrame.timestamp);

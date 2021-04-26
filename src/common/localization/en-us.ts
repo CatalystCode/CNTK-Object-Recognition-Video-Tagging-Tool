@@ -284,6 +284,12 @@ export const english: IAppStrings = {
             nextTaggedFrame: {
                 tooltip: "Next Tagged Frame",
             },
+            previousVisitedFrame: {
+                tooltip: "Previous Visited Frame",
+            },
+            nextVisitedFrame: {
+                tooltip: "Next Visited Frame",
+            },
             previousExpectedFrame: {
                 tooltip: "Previous Frame",
             },

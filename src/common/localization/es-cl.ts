@@ -286,6 +286,12 @@ export const spanish: IAppStrings = {
             nextTaggedFrame: {
                 tooltip: "Siguiente marco etiquetado",
             },
+            previousVisitedFrame: {
+                tooltip: "Fotograma visitado anterior",
+            },
+            nextVisitedFrame: {
+                tooltip: "Siguiente marco visitado",
+            },
             previousExpectedFrame: {
                 tooltip: "Fotograma anterior",
             },

@@ -260,6 +260,8 @@ When the video playback bar is present, it allows the following shortcuts to sel
 * D or ArrowRight - Next Frame
 * Q - Previous Tagged Frame
 * E - Next Tagged Frame
+* H - Previous Visited Frame
+* L - Next Visited Frame
 
 #### Mouse Controls
 

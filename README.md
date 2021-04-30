@@ -128,6 +128,15 @@ To create a new connection, click the `New Connections` (plug) icon, in the left
 
 ![alt text](docs/images/new-connection.jpg "New Connection")
 
+
+Note: For using VOTT web , you need to have Azure subscription
+
+When using Bing image search as connection, one needs to create an API key. This can be obtained from the azure portal when creating a Azure cognitive search resource.
+
+![alt text](docs/images/API-Key.jpg "VoTT using Bing Image Search")
+
+
+
 ### Creating a New Project
 
 Labeling workflows in VoTT revolve around projects - a collection of configurations and settings that persist.
@@ -207,9 +216,9 @@ In addition, users may choose to export
 * only visited assets
 * only tagged assets
 
-Click on the `Export` (arrow) icon in the left hand navigation. Select the appropriate export provider and which assets to export. The percentage separated into testing and training sets can be adjusted here too.
+Click on the `Export` (arrow) icon in the left hand navigation. Select the appropriate export provider and which assets to export. 
 
-![alt text](docs/images/export-labels.jpg "Export Labels")
+![alt text](docs/images/export-label.jpg "Export Labels")
 
 ### Keyboard Shortcuts
 

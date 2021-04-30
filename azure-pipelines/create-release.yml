@@ -8,7 +8,7 @@ variables:
   DEV_STORAGE_ACCOUNT: 'vottdev'
   PROD_STORAGE_ACCOUNT: 'vott'
   DEV_URL: "https://vottdev.z5.web.core.windows.net/"
-  PROD_URL: "https://vott.z22.web.core.windows.net/"
+  PROD_URL: "https://vott.z22.web.core.windows.net/  (Recommended)"
 
 stages:
 - stage: version_bump_commit

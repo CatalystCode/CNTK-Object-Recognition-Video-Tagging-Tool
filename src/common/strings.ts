@@ -5,6 +5,7 @@ import { japanese } from "./localization/ja";
 import { chinesetw } from "./localization/zh-tw";
 import { korean } from "./localization/ko-kr";
 import { chinese } from "./localization/zh-ch";
+import { german } from "./localization/de-de";
 
 /**
  * Interface for all required strings in application
@@ -506,6 +507,7 @@ export const strings: IStrings = new LocalizedStrings({
     tw: chinesetw,
     ko: korean,
     ch: chinese,
+    de: german,
 });
 
 /**
